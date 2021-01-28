@@ -37,12 +37,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(!timerHasStarted) {
             countDownTimer.start();
             timerHasStarted = true;
-            startB.setText("Start");
+            //Changes text state of button to show user what the next click will do
+            startB.setText(R.string.reset_button);
         }
         else {
             countDownTimer.cancel();
             timerHasStarted = false;
-            startB.setText("Reset");
+            startB.setText(R.string.start_button);
         }
 
     }

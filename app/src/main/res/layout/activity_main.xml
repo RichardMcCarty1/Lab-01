@@ -7,7 +7,7 @@
 
     <Button
         android:id="@+id/button"
-        android:text="Start"
+        android:text="Click this button to start!"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 

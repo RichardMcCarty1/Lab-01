@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">simpletimer</string>
+    <string name="start_button">Click this button to start!</string>
+    <string name="reset_button">Click this button to reset!</string>
 </resources>
