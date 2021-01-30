@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    private class CountDownTimer extends android.os.CountDownTimer {
+    public class CountDownTimer extends android.os.CountDownTimer {
         public CountDownTimer(long millisInFuture, long countDownInterval) {
             super(millisInFuture, countDownInterval);
         }
@@ -57,13 +57,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         public void onTick(long millisUntilFinished) {
             text.setText("Time Remaining: " + millisUntilFinished);
             timeElapsed = startTime - millisUntilFinished;
-            timeElapsedView.setText("Time Elapsed: " + String.valueOf(timeElapsed));
+            timeElapsedView.setText("Time Elapsed: " + timeElapsed);
         }
 
         @Override
         public void onFinish() {
             text.setText("Time's up!");
-            timeElapsedView.setText("Time Elapsed: " + String.valueOf(startTime));
+            timeElapsedView.setText("Time Elapsed: " + startTime);
         }
     }
 }
