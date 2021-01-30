@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    public class CountDownTimer extends android.os.CountDownTimer {
+    private class CountDownTimer extends android.os.CountDownTimer {
         public CountDownTimer(long millisInFuture, long countDownInterval) {
             super(millisInFuture, countDownInterval);
         }
